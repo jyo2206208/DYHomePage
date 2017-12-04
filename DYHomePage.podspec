@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DYHomePage'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'description of DYHomePage.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ This is a HomePage Template!!!
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DYHomePage/*.{h,m}'
+  s.source_files = '{DYHomePage,Targets}/*.{h,m}'
   
   # s.resource_bundles = {
   #   'DYHomePage' => ['DYHomePage/Assets/*.png']
