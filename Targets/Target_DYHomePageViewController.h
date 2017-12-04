@@ -10,6 +10,6 @@
 
 @interface Target_DYHomePageViewController : NSObject
 
-- (UIViewController *)Action_homePageViewController;
+- (UIViewController *)Action_homePageViewController:(NSDictionary *)params;
 
 @end

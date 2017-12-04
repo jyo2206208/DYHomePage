@@ -11,7 +11,7 @@
 
 @implementation Target_DYHomePageViewController
 
-- (UIViewController *)Action_homePageViewController{
+- (UIViewController *)Action_homePageViewController:(NSDictionary *)params{
     return [[DYHomePageViewController alloc] init];
 }
 
