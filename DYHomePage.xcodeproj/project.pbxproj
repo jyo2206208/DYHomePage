@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3A79C31FD5008B00AE03D3 /* DYHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3A79C21FD5008B00AE03D3 /* DYHomePageViewController.m */; };
+		1D3A79CD1FD526D800AE03D3 /* Target_DYHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3A79CC1FD526D800AE03D3 /* Target_DYHomePageViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* DYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DYAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* DYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DYViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -38,7 +39,10 @@
 
 /* Begin PBXFileReference section */
 		1B90237224993802515C147F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4456FB87E530103957C306C7 /* RemoveMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RemoveMe.m; path = ../DYHomePage/RemoveMe.m; sourceTree = "<group>"; };
+		1D3A79C11FD5008B00AE03D3 /* DYHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYHomePageViewController.h; sourceTree = "<group>"; };
+		1D3A79C21FD5008B00AE03D3 /* DYHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYHomePageViewController.m; sourceTree = "<group>"; };
+		1D3A79CB1FD526D800AE03D3 /* Target_DYHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_DYHomePageViewController.h; sourceTree = "<group>"; };
+		1D3A79CC1FD526D800AE03D3 /* Target_DYHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_DYHomePageViewController.m; sourceTree = "<group>"; };
 		5A6FEEF27D4C54F2EE311513 /* Pods-DYHomePage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYHomePage_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYHomePage_Tests/Pods-DYHomePage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DYHomePage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYHomePage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,8 +54,6 @@
 		6003F59B195388D20070C39A /* DYHomePage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DYHomePage-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* DYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* DYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* DYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* DYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* DYHomePage_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYHomePage_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -95,10 +97,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D3A79C41FD5027200AE03D3 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				1D3A79CB1FD526D800AE03D3 /* Target_DYHomePageViewController.h */,
+				1D3A79CC1FD526D800AE03D3 /* Target_DYHomePageViewController.m */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
 		1D4EE82C1FCDD0590062AFE5 /* DYHomePage */ = {
 			isa = PBXGroup;
 			children = (
-				4456FB87E530103957C306C7 /* RemoveMe.m */,
+				1D3A79C11FD5008B00AE03D3 /* DYHomePageViewController.h */,
+				1D3A79C21FD5008B00AE03D3 /* DYHomePageViewController.m */,
 			);
 			path = DYHomePage;
 			sourceTree = "<group>";
@@ -116,6 +128,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				1D3A79C41FD5027200AE03D3 /* Targets */,
 				1D6A88461FCDF04A003F3DE4 /* Podspec Metadata */,
 				1D4EE82C1FCDD0590062AFE5 /* DYHomePage */,
 				6003F593195388D20070C39A /* Example for DYHomePage */,
@@ -154,8 +167,6 @@
 				6003F59C195388D20070C39A /* DYAppDelegate.h */,
 				6003F59D195388D20070C39A /* DYAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* DYViewController.h */,
-				6003F5A6195388D20070C39A /* DYViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -408,9 +419,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3A79CD1FD526D800AE03D3 /* Target_DYHomePageViewController.m in Sources */,
 				6003F59E195388D20070C39A /* DYAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* DYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				1D3A79C31FD5008B00AE03D3 /* DYHomePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
