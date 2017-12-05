@@ -30,6 +30,7 @@
 }
 
 - (void)setUp {
+    self.view.backgroundColor = [UIColor whiteColor];
     self.homeLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 300, 100)];
     self.homeLabel.text = @"This is HomePage";
     [self.view addSubview:self.homeLabel];
