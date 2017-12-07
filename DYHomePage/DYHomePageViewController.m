@@ -7,10 +7,11 @@
 //
 
 #import "DYHomePageViewController.h"
+#import "FFCallCenter+DYShoppingBagHeader.h"
 
 @interface DYHomePageViewController ()
 
-@property (nonatomic, strong) UILabel *homeLabel;
+@property (nonatomic, strong) UIImageView *bkImageView;
 
 @end
 
@@ -19,8 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUp];
-    
-    
     // Do any additional setup after loading the view.
 }
 
@@ -30,10 +29,22 @@
 }
 
 - (void)setUp {
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.homeLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 300, 100)];
-    self.homeLabel.text = @"This is HomePage";
-    [self.view addSubview:self.homeLabel];
+    
+    self.bkImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
+    self.bkImageView.image = [UIImage imageNamed:@"HomePage"];
+    [self.view addSubview:self.bkImageView];
+    
+    self.navigationController.navigationItem.title = @"farfetch";
+    
+    
+    UIBarButtonItem *rightBarButtonItemIcon = [[UIBarButtonItem alloc] initWithImage:[[FFCallCenter sharedInstance] bagIconImage] style:UIBarButtonItemStyleDone target:self action:@selector(presentBagController)];
+    UIBarButtonItem *rightBarButtonItemCount = [[UIBarButtonItem alloc] initWithTitle:[[FFCallCenter sharedInstance] productCount] style:UIBarButtonItemStyleDone target:self action:@selector(presentBagController)];
+
+    self.navigationItem.rightBarButtonItems = @[rightBarButtonItemIcon,rightBarButtonItemCount];
+}
+
+- (void) presentBagController {
+    [self presentViewController:[[FFCallCenter sharedInstance] shoppingBagViewController] animated:YES completion:nil];
 }
 
 /*

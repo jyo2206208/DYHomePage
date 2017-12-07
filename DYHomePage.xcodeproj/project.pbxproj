@@ -373,9 +373,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DYHomePage_Example/Pods-DYHomePage_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DYShoppingBag/DYShoppingBag.framework",
+				"${BUILT_PRODUCTS_DIR}/DYShoppingBagHeader/DYShoppingBagHeader.framework",
+				"${BUILT_PRODUCTS_DIR}/FFCallCenter/FFCallCenter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DYShoppingBag.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DYShoppingBagHeader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFCallCenter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
