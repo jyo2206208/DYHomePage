@@ -12,6 +12,7 @@
 @interface DYHomePageViewController ()
 
 @property (nonatomic, strong) UIImageView *bkImageView;
+@property (nonatomic, strong) UIBarButtonItem *rightBarButtonItemCount;
 
 @end
 
@@ -39,13 +40,20 @@
     
     
     UIBarButtonItem *rightBarButtonItemIcon = [[UIBarButtonItem alloc] initWithImage:[[FFCallCenter sharedInstance] bagIconImage] style:UIBarButtonItemStyleDone target:self action:@selector(presentBagController)];
-    UIBarButtonItem *rightBarButtonItemCount = [[UIBarButtonItem alloc] initWithTitle:[[FFCallCenter sharedInstance] productCount] style:UIBarButtonItemStyleDone target:self action:@selector(presentBagController)];
+    self.rightBarButtonItemCount = [[UIBarButtonItem alloc] initWithTitle:[[FFCallCenter sharedInstance] productCount] style:UIBarButtonItemStyleDone target:self action:@selector(addToBag)];
 
-    self.navigationItem.rightBarButtonItems = @[rightBarButtonItemIcon,rightBarButtonItemCount];
+    self.navigationItem.rightBarButtonItems = @[rightBarButtonItemIcon,self.rightBarButtonItemCount];
 }
 
 - (void) presentBagController {
     [self presentViewController:[[FFCallCenter sharedInstance] shoppingBagViewController] animated:YES completion:nil];
+}
+
+- (void) addToBag {
+    __weak typeof(self) weakSelf = self;
+    [[FFCallCenter sharedInstance] addToShoppingBagWithConfirmAction:^(NSDictionary *info) {
+        weakSelf.rightBarButtonItemCount.title = [NSString stringWithFormat:@"%@",info[@"productCount"]];
+    }];
 }
 
 /*

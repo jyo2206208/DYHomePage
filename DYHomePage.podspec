@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DYHomePage'
-  s.version          = '0.0.9'
+  s.version          = '0.0.10'
   s.summary          = 'description of DYHomePage.'
 
 # This description is used to generate tags and improve search results.
