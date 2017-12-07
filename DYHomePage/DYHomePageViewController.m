@@ -32,7 +32,7 @@
     
     self.bkImageView = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[DYHomePageViewController class]] pathForResource:@"DYHomePage" ofType:@"bundle"]];
-    self.bkImageView.image = [[UIImage imageWithContentsOfFile:[bundle pathForResource:@"HomePage" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAutomatic];
+    self.bkImageView.image = [[UIImage imageWithContentsOfFile:[bundle pathForResource:@"HomePage" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self.view addSubview:self.bkImageView];
     
     self.navigationItem.title = @"farfetch";
