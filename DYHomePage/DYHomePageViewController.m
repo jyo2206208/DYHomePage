@@ -30,11 +30,12 @@
 
 - (void)setUp {
     
-    self.bkImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
-    self.bkImageView.image = [UIImage imageNamed:@"HomePage"];
+    self.bkImageView = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[DYHomePageViewController class]] pathForResource:@"DYHomePage" ofType:@"bundle"]];
+    self.bkImageView.image = [[UIImage imageWithContentsOfFile:[bundle pathForResource:@"HomePage" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [self.view addSubview:self.bkImageView];
     
-    self.navigationController.navigationItem.title = @"farfetch";
+    self.navigationItem.title = @"farfetch";
     
     
     UIBarButtonItem *rightBarButtonItemIcon = [[UIBarButtonItem alloc] initWithImage:[[FFCallCenter sharedInstance] bagIconImage] style:UIBarButtonItemStyleDone target:self action:@selector(presentBagController)];
